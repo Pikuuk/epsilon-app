@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Epsilon Academy — Sign in</title>
+<style>
+:root{--bg:#eef2ee;--surface:#fff;--ink:#15211a;--muted:#56655b;--line:#cfd9d1;--brand:#1a2a22;--ok:#17695c;--bad:#a23a28;--focus:#2b6cff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1712;--surface:#18231c;--ink:#e8f0ea;--muted:#9fb2a5;--line:#2c3d32;--brand:#0a110d;--ok:#52c2ad;--bad:#ff8f7a;--focus:#7ea6ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:grid;place-items:center;min-height:100vh}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem;max-width:420px;width:92%}
+h1{font-size:1.4rem;margin:.2rem 0 1rem}
+label{display:block;font-weight:600;margin:.7rem 0 .2rem}
+input{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.6rem}
+button{margin-top:1rem;width:100%;font:600 1rem system-ui;border:1px solid var(--brand);background:var(--brand);color:#f2f7f3;border-radius:8px;padding:.7rem;cursor:pointer}
+.msg{margin-top:.8rem;padding:.6rem .8rem;border-radius:8px;background:#fdecea;color:var(--bad)}
+.muted{color:var(--muted);font-size:.92rem}
+a{color:var(--ok)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Epsilon Academy</h1>
+  <div id="app"></div>
+</div>
+<script src="/js/login.js"></script>
+</body>
+</html>

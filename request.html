@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Epsilon Academy — Ask for access</title>
+<style>
+:root{--bg:#eef2ee;--surface:#fff;--ink:#15211a;--muted:#56655b;--line:#cfd9d1;--brand:#1a2a22;--ok:#17695c;--bad:#a23a28;--focus:#2b6cff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1712;--surface:#18231c;--ink:#e8f0ea;--muted:#9fb2a5;--line:#2c3d32;--brand:#0a110d;--ok:#52c2ad;--bad:#ff8f7a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:grid;place-items:center;min-height:100vh}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem;max-width:460px;width:92%}
+h1{font-size:1.4rem}
+label{display:block;font-weight:600;margin:.7rem 0 .2rem}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.6rem}
+.radios{display:flex;gap:1.2rem;margin:.4rem 0}.radios label{font-weight:400;display:flex;gap:.4rem;align-items:center;margin:0}
+button{margin-top:1rem;width:100%;font:600 1rem system-ui;border:1px solid var(--brand);background:var(--brand);color:#f2f7f3;border-radius:8px;padding:.7rem;cursor:pointer}
+.msg{margin-top:.8rem;padding:.6rem .8rem;border-radius:8px}
+.msg.err{background:#fdecea;color:var(--bad)}.msg.ok{background:#e6f4ea;color:var(--ok)}
+.muted{color:var(--muted);font-size:.92rem}a{color:var(--ok)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="card" id="card">
+  <h1>Ask for access</h1>
+  <p class="muted">Students and parents ask to join here. A teacher or the Epsilon team checks every request before you can sign in. For a student, please give a parent or guardian email.</p>
+  <div class="radios" role="radiogroup" aria-label="I am a"><label><input type="radio" name="role" value="student" checked> Student</label><label><input type="radio" name="role" value="parent"> Parent or guardian</label></div>
+  <label for="name">Full name</label><input id="name" autocomplete="off">
+  <div id="yearWrap"><label for="year">Year</label><select id="year"><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option></select></div>
+  <label for="email">Email (parent/guardian email for students)</label><input id="email" type="email" autocomplete="off">
+  <button id="go">Request access</button>
+  <div id="msg"></div>
+  <p class="muted" style="margin-top:1rem">Already have an account? <a href="/login.html">Sign in</a></p>
+</div>
+<script src="/js/request.js"></script>
+</body>
+</html>
