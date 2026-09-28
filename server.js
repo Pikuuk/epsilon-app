@@ -25,7 +25,7 @@ const DATA_DIR = path.join(ROOT, 'data');
 const STORE = path.join(DATA_DIR, 'store.json');
 const PUBLIC = path.join(ROOT, 'public');
 const CONFIG = readConfig();
-const PORT = CONFIG.PORT || process.env.PORT || 8080;
+const PORT = CONFIG.PORT || process.env.PORT || 8787;
 
 // ---------- tiny JSON store with atomic writes ----------
 let db = loadDB();
@@ -325,6 +325,11 @@ function adminAction(user, b) {
       m.plan = b.plan || null; // the client builds the plan; server stores it against the student
       if(m.plan) m.plan.status='published';
       audit(user.id,'publish_plan',m.id); return {};
+    }
+    case 'import_builtin': {
+      if (!isSuper) return { error: 'Only the super user can load content.' };
+      let items; try { items = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'year7-maths-approved.json'), 'utf8')); } catch (e) { return { error: 'Built-in content file not found on the server.' }; }
+      db.items = items; audit(user.id, 'import_builtin', String(items.length)); return { count: items.length };
     }
     default: return { error: 'Unknown action.' };
   }
