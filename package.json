@@ -1,0 +1,14 @@
+{
+  "name": "epsilon-academy-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Epsilon Academy: multi-user server for the pilot (Node, no external database).",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "backup": "node scripts/backup.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {}
+}
