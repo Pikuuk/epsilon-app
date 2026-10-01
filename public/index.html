@@ -116,7 +116,7 @@ function teacherView(){
   (S.safeguard||[]).slice().reverse().forEach(function(s,i){var idx=S.safeguard.length-1-i;h+='<div class="card"><p>'+esc(s.message)+'</p>'+(s.handled?'<span class="chip ok">handled</span>':'<div class="actions"><button data-flag-idx="'+idx+'">Mark handled</button></div>')+'</div>';});
   return h;
 }
-function studentView(){function studentView(){
+function studentView(){
   var m=S.member;
 
   if(!m){
