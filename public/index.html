@@ -6,33 +6,7 @@
 <title>Epsilon Academy</title>
 <style>
 :root{--bg:#eef2ee;--surface:#fff;--ink:#15211a;--muted:#56655b;--line:#cfd9d1;--brand:#1a2a22;--brandink:#f2f7f3;--ok:#17695c;--warn:#8a5a00;--warnbg:#fdf1d6;--bad:#a23a28;--chip:#dfe8e1;--focus:#2b6cff}
-/* Student dashboard — Epsilon Modern */
-.student-shell{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 54px);margin:-1.1rem -1rem -3rem;background:#f4f7fb;color:#17223b}
-.student-sidebar{background:#0a1831;color:#c5d2e9;padding:1.4rem 1rem;display:flex;flex-direction:column;min-height:calc(100vh - 54px)}
-.student-mark{width:34px;height:34px;border-radius:10px;background:#22c7b8;color:#062034;display:grid;place-items:center;font-size:1.4rem;font-weight:800;margin-bottom:.45rem}
-.student-brand{font-size:.8rem;font-weight:800;letter-spacing:.12em;color:#fff}.student-brand span{display:block;color:#51d8ce;font-size:.62rem;letter-spacing:.19em;margin-top:.12rem}
-.student-nav{display:grid;gap:.35rem;margin-top:2.4rem}.student-nav a{display:flex;gap:.7rem;align-items:center;text-decoration:none;color:#b6c4dd;padding:.7rem .75rem;border-radius:9px;font-weight:650}.student-nav a:hover,.student-nav a.active{background:#16345d;color:#fff}.student-side-help{margin-top:auto;border-top:1px solid #24436b;padding:.9rem .35rem 0;font-size:.8rem}.student-side-help strong{color:#fff;display:block;margin-bottom:.25rem}.student-side-help span{line-height:1.35}
-.student-main{padding:2.2rem 2.5rem 4rem;max-width:1220px;width:100%;margin:0 auto}.student-mobile-bar{display:none}.student-header{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;margin-bottom:1.8rem}.student-header h1{font-size:clamp(1.7rem,3vw,2.35rem);margin:.15rem 0;color:#122143;letter-spacing:-.035em}.student-header p:not(.student-kicker){margin:0;color:#63708b}.student-kicker{font-size:.7rem;font-weight:800;letter-spacing:.13em;color:#4261a3;margin:0 0 .35rem}.student-kicker.light{color:#86eee5}.student-profile{display:flex;align-items:center;gap:.55rem;font-size:.9rem;font-weight:700;color:#3d4c6b}.student-avatar{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#d8f8f4;color:#087d76;font-weight:800}
-.student-consent{background:#fff7e2;border:1px solid #f2d38d;border-left:4px solid #e4a62c;color:#654500;border-radius:12px;padding:.85rem 1rem;margin-bottom:1rem;display:grid;gap:.15rem}.student-consent span{font-size:.9rem}
-.student-next{border-radius:20px;background:linear-gradient(120deg,#102a57,#164c7c 58%,#0d887f);color:#fff;padding:clamp(1.35rem,3vw,2.5rem);min-height:250px;display:flex;justify-content:space-between;gap:1.5rem;overflow:hidden;position:relative;box-shadow:0 18px 38px rgba(17,43,85,.17)}.student-next-copy{max-width:580px;z-index:1}.student-next h2{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.12;margin:.1rem 0 .75rem}.student-next p:not(.student-kicker){color:#dceafa;max-width:480px;margin:0 0 1.25rem}.student-primary{display:inline-flex;gap:.5rem;align-items:center;text-decoration:none;background:#49ded3;color:#06263d;padding:.72rem 1rem;border-radius:9px;font-weight:800}.student-primary:hover{background:#77eee5}.student-disabled{display:inline-block;background:rgba(255,255,255,.14);padding:.65rem .9rem;border-radius:9px;color:#e5edf9;font-weight:700;font-size:.92rem}.student-next-art{position:relative;width:210px;min-width:160px}.student-orbit{position:absolute;border:1px solid rgba(137,244,233,.5);border-radius:50%}.orbit-one{width:185px;height:185px;right:-25px;top:13px}.orbit-two{width:110px;height:110px;right:16px;top:50px}.student-orbit-core{position:absolute;right:51px;top:83px;width:54px;height:54px;border-radius:50%;background:#51ddd3;color:#073450;display:grid;place-items:center;font-size:2rem;font-weight:800;box-shadow:0 0 0 15px rgba(93,235,222,.1)}
-.student-section{margin-top:2.25rem}.student-section-title{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:.85rem}.student-section-title h2,.student-panel h2,.student-more h2{margin:.05rem 0;color:#162545;font-size:1.35rem}.student-section-title>span{font-size:.85rem;color:#72809a}.student-subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.85rem}.student-subject-card{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1rem;display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:center;box-shadow:0 4px 12px rgba(20,43,78,.035)}.student-subject-icon{width:40px;height:40px;border-radius:11px;background:#e5faf8;color:#0b938a;display:grid;place-items:center;font-size:1.25rem;font-weight:800}.student-subject-copy{display:grid;gap:.1rem}.student-subject-copy strong{color:#203252}.student-subject-copy span,.student-card-muted{font-size:.78rem;color:#6e7d96}.student-card-link{grid-column:1/-1;text-decoration:none;color:#126d9c;font-size:.85rem;font-weight:800;padding-top:.3rem}.student-empty{padding:1rem;background:#fff;border:1px dashed #bbc9df;border-radius:13px;color:#65728b}
-.student-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:.9rem;margin-top:.9rem}.student-panel{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1.15rem}.student-panel p:not(.student-kicker){color:#61708a;margin:.45rem 0 .9rem}.student-progress-track{height:9px;background:#e6ecf5;border-radius:50px;overflow:hidden}.student-progress-track span{display:block;height:100%;border-radius:50px;background:linear-gradient(90deg,#23c7ba,#2d78d2)}.student-panel small{display:block;color:#74819a;margin-top:.55rem}.student-focus{background:#edf9f8;border-color:#ccece8}.student-focus-tip{font-size:.84rem;color:#176e6b;background:#fff;padding:.65rem;border-radius:8px;border:1px solid #d6eeeb}
-.student-more{margin-top:2.25rem}.student-more-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:.8rem}.student-more-grid article{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1rem}.student-more-grid article>span{display:block;color:#168d88;font-weight:800;font-size:1.2rem}.student-more-grid strong{display:block;color:#1d2d4b;margin-top:.35rem}.student-more-grid p{color:#65738d;font-size:.88rem;margin:.25rem 0 .8rem}.student-more-grid button{font-size:.82rem;padding:.35rem .6rem}
-@media(max-width:760px){.student-shell{display:block;margin:-1.1rem -1rem -3rem}.student-sidebar{display:none}.student-main{padding:0 1rem 3rem}.student-mobile-bar{margin:0 -1rem;padding:.85rem 1rem;display:flex;justify-content:space-between;align-items:center;background:#0a1831;color:#fff}.student-mobile-bar a{color:#78eee5;font-weight:700;text-decoration:none}.student-header{padding-top:1.35rem}.student-profile{display:none}.student-next{min-height:0}.student-next-art{display:none}.student-grid,.student-more-grid{grid-template-columns:1fr}.student-section-title{align-items:start}.student-header h1{font-size:1.8rem}}
-/* Student dashboard — Epsilon Modern */
-.student-shell{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 54px);margin:-1.1rem -1rem -3rem;background:#f4f7fb;color:#17223b}
-.student-sidebar{background:#0a1831;color:#c5d2e9;padding:1.4rem 1rem;display:flex;flex-direction:column;min-height:calc(100vh - 54px)}
-.student-mark{width:34px;height:34px;border-radius:10px;background:#22c7b8;color:#062034;display:grid;place-items:center;font-size:1.4rem;font-weight:800;margin-bottom:.45rem}
-.student-brand{font-size:.8rem;font-weight:800;letter-spacing:.12em;color:#fff}.student-brand span{display:block;color:#51d8ce;font-size:.62rem;letter-spacing:.19em;margin-top:.12rem}
-.student-nav{display:grid;gap:.35rem;margin-top:2.4rem}.student-nav a{display:flex;gap:.7rem;align-items:center;text-decoration:none;color:#b6c4dd;padding:.7rem .75rem;border-radius:9px;font-weight:650}.student-nav a:hover,.student-nav a.active{background:#16345d;color:#fff}.student-side-help{margin-top:auto;border-top:1px solid #24436b;padding:.9rem .35rem 0;font-size:.8rem}.student-side-help strong{color:#fff;display:block;margin-bottom:.25rem}.student-side-help span{line-height:1.35}
-.student-main{padding:2.2rem 2.5rem 4rem;max-width:1220px;width:100%;margin:0 auto}.student-mobile-bar{display:none}.student-header{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;margin-bottom:1.8rem}.student-header h1{font-size:clamp(1.7rem,3vw,2.35rem);margin:.15rem 0;color:#122143;letter-spacing:-.035em}.student-header p:not(.student-kicker){margin:0;color:#63708b}.student-kicker{font-size:.7rem;font-weight:800;letter-spacing:.13em;color:#4261a3;margin:0 0 .35rem}.student-kicker.light{color:#86eee5}.student-profile{display:flex;align-items:center;gap:.55rem;font-size:.9rem;font-weight:700;color:#3d4c6b}.student-avatar{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#d8f8f4;color:#087d76;font-weight:800}
-.student-consent{background:#fff7e2;border:1px solid #f2d38d;border-left:4px solid #e4a62c;color:#654500;border-radius:12px;padding:.85rem 1rem;margin-bottom:1rem;display:grid;gap:.15rem}.student-consent span{font-size:.9rem}
-.student-next{border-radius:20px;background:linear-gradient(120deg,#102a57,#164c7c 58%,#0d887f);color:#fff;padding:clamp(1.35rem,3vw,2.5rem);min-height:250px;display:flex;justify-content:space-between;gap:1.5rem;overflow:hidden;position:relative;box-shadow:0 18px 38px rgba(17,43,85,.17)}.student-next-copy{max-width:580px;z-index:1}.student-next h2{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.12;margin:.1rem 0 .75rem}.student-next p:not(.student-kicker){color:#dceafa;max-width:480px;margin:0 0 1.25rem}.student-primary{display:inline-flex;gap:.5rem;align-items:center;text-decoration:none;background:#49ded3;color:#06263d;padding:.72rem 1rem;border-radius:9px;font-weight:800}.student-primary:hover{background:#77eee5}.student-disabled{display:inline-block;background:rgba(255,255,255,.14);padding:.65rem .9rem;border-radius:9px;color:#e5edf9;font-weight:700;font-size:.92rem}.student-next-art{position:relative;width:210px;min-width:160px}.student-orbit{position:absolute;border:1px solid rgba(137,244,233,.5);border-radius:50%}.orbit-one{width:185px;height:185px;right:-25px;top:13px}.orbit-two{width:110px;height:110px;right:16px;top:50px}.student-orbit-core{position:absolute;right:51px;top:83px;width:54px;height:54px;border-radius:50%;background:#51ddd3;color:#073450;display:grid;place-items:center;font-size:2rem;font-weight:800;box-shadow:0 0 0 15px rgba(93,235,222,.1)}
-.student-section{margin-top:2.25rem}.student-section-title{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:.85rem}.student-section-title h2,.student-panel h2,.student-more h2{margin:.05rem 0;color:#162545;font-size:1.35rem}.student-section-title>span{font-size:.85rem;color:#72809a}.student-subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.85rem}.student-subject-card{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1rem;display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:center;box-shadow:0 4px 12px rgba(20,43,78,.035)}.student-subject-icon{width:40px;height:40px;border-radius:11px;background:#e5faf8;color:#0b938a;display:grid;place-items:center;font-size:1.25rem;font-weight:800}.student-subject-copy{display:grid;gap:.1rem}.student-subject-copy strong{color:#203252}.student-subject-copy span,.student-card-muted{font-size:.78rem;color:#6e7d96}.student-card-link{grid-column:1/-1;text-decoration:none;color:#126d9c;font-size:.85rem;font-weight:800;padding-top:.3rem}.student-empty{padding:1rem;background:#fff;border:1px dashed #bbc9df;border-radius:13px;color:#65728b}
-.student-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:.9rem;margin-top:.9rem}.student-panel{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1.15rem}.student-panel p:not(.student-kicker){color:#61708a;margin:.45rem 0 .9rem}.student-progress-track{height:9px;background:#e6ecf5;border-radius:50px;overflow:hidden}.student-progress-track span{display:block;height:100%;border-radius:50px;background:linear-gradient(90deg,#23c7ba,#2d78d2)}.student-panel small{display:block;color:#74819a;margin-top:.55rem}.student-focus{background:#edf9f8;border-color:#ccece8}.student-focus-tip{font-size:.84rem;color:#176e6b;background:#fff;padding:.65rem;border-radius:8px;border:1px solid #d6eeeb}
-.student-more{margin-top:2.25rem}.student-more-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:.8rem}.student-more-grid article{background:#fff;border:1px solid #e1e8f3;border-radius:14px;padding:1rem}.student-more-grid article>span{display:block;color:#168d88;font-weight:800;font-size:1.2rem}.student-more-grid strong{display:block;color:#1d2d4b;margin-top:.35rem}.student-more-grid p{color:#65738d;font-size:.88rem;margin:.25rem 0 .8rem}.student-more-grid button{font-size:.82rem;padding:.35rem .6rem}
-@media(max-width:760px){.student-shell{display:block;margin:-1.1rem -1rem -3rem}.student-sidebar{display:none}.student-main{padding:0 1rem 3rem}.student-mobile-bar{margin:0 -1rem;padding:.85rem 1rem;display:flex;justify-content:space-between;align-items:center;background:#0a1831;color:#fff}.student-mobile-bar a{color:#78eee5;font-weight:700;text-decoration:none}.student-header{padding-top:1.35rem}.student-profile{display:none}.student-next{min-height:0}.student-next-art{display:none}.student-grid,.student-more-grid{grid-template-columns:1fr}.student-section-title{align-items:start}.student-header h1{font-size:1.8rem}}
-  @media(prefers-color-scheme:dark){:root{--bg:#0f1712;--surface:#18231c;--ink:#e8f0ea;--muted:#9fb2a5;--line:#2c3d32;--brand:#0a110d;--ok:#52c2ad;--warn:#f0c15a;--warnbg:#3a2d0c;--bad:#ff8f7a;--chip:#22332a}}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1712;--surface:#18231c;--ink:#e8f0ea;--muted:#9fb2a5;--line:#2c3d32;--brand:#0a110d;--ok:#52c2ad;--warn:#f0c15a;--warnbg:#3a2d0c;--bad:#ff8f7a;--chip:#22332a}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .top{background:var(--brand);color:var(--brandink);padding:.8rem 1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .brand{font-weight:700;font-size:1.2rem}
@@ -118,155 +92,12 @@ function teacherView(){
 }
 function studentView(){
   var m=S.member;
-
-  if(!m){
-    return '<h1>Welcome</h1><p>Your account is being set up. Please check back soon.</p>';
-  }
-
-  if(m.status==='revoked'){
-    return '<h1>Access paused</h1><p>Please contact Epsilon Academy.</p>';
-  }
-
-  var subjects=(m.subs||[]);
-  var maths=subjects.filter(function(s){
-    return String(s.subject||'').toLowerCase()==='maths' ||
-      String(s.subject||'').toLowerCase()==='mathematics';
-  })[0];
-
-  var subjectCards=subjects.length
-    ? subjects.map(function(s){
-        var isMaths=String(s.subject||'').toLowerCase()==='maths' ||
-          String(s.subject||'').toLowerCase()==='mathematics';
-
-        return '<article class="student-subject-card">'+
-          '<div class="student-subject-icon">'+(isMaths?'∑':'◈')+'</div>'+
-          '<div class="student-subject-copy">'+
-            '<strong>'+esc(s.subject)+'</strong>'+
-            '<span>'+esc(s.board||'Your learning pathway')+'</span>'+
-          '</div>'+
-          (isMaths
-            ? '<a class="student-card-link" href="/practice.html">Open practice <span aria-hidden="true">→</span></a>'
-            : '<span class="student-card-muted">Your teacher will add activities here</span>')+
-        '</article>';
-      }).join('')
-    : '<div class="student-empty"><strong>No subjects have been added yet.</strong><br><span>Your teacher will add your learning subjects soon.</span></div>';
-
-  var consentBanner=!S.consented
-    ? '<div class="student-consent">'+
-        '<strong>Parent or guardian permission needed</strong>'+
-        '<span>You can explore your learning area, but progress and answers cannot be saved until permission is recorded.</span>'+
-      '</div>'
-    : '';
-
-  var mathsText=maths
-    ? 'Your next step is ready. Work through the practice levels at your own pace.'
-    : 'Your teacher will add your first learning activity soon.';
-
-  var mathsAction=maths
-    ? '<a class="student-primary" href="/practice.html">Continue learning <span aria-hidden="true">→</span></a>'
-    : '<span class="student-disabled">Waiting for your first subject</span>';
-
-  return ''+
-    '<section class="student-shell">'+
-      '<aside class="student-sidebar">'+
-        '<div class="student-mark">ε</div>'+
-        '<div class="student-brand">EPSILON<span>ACADEMY</span></div>'+
-        '<nav class="student-nav" aria-label="Student navigation">'+
-          '<a class="active" href="#student-home">⌂ <span>Home</span></a>'+
-          '<a href="/practice.html">◈ <span>My practice</span></a>'+
-          '<a href="#student-progress">↗ <span>Progress</span></a>'+
-          '<a href="#student-more">••• <span>More</span></a>'+
-        '</nav>'+
-        '<div class="student-side-help">'+
-          '<strong>Need help?</strong>'+
-          '<span>Take your time. Learning grows one step at a time.</span>'+
-        '</div>'+
-      '</aside>'+
-
-      '<div class="student-main" id="student-home">'+
-        '<div class="student-mobile-bar">'+
-          '<strong>ε EPSILON</strong>'+
-          '<a href="/practice.html">Practice</a>'+
-        '</div>'+
-
-        '<header class="student-header">'+
-          '<div>'+
-            '<p class="student-kicker">YOUR LEARNING SPACE</p>'+
-            '<h1>Good to see you, '+esc(m.name)+'</h1>'+
-            '<p>'+esc(m.year)+' · Build confidence one step at a time.</p>'+
-          '</div>'+
-          '<div class="student-profile">'+
-            '<span class="student-avatar">'+esc((m.name||'?').charAt(0).toUpperCase())+'</span>'+
-            '<span>'+esc(m.name)+'</span>'+
-          '</div>'+
-        '</header>'+
-
-        consentBanner+
-
-        '<section class="student-next">'+
-          '<div class="student-next-copy">'+
-            '<p class="student-kicker light">READY WHEN YOU ARE</p>'+
-            '<h2>Continue your learning journey</h2>'+
-            '<p>'+mathsText+'</p>'+
-            mathsAction+
-          '</div>'+
-          '<div class="student-next-art" aria-hidden="true">'+
-            '<div class="student-orbit orbit-one"></div>'+
-            '<div class="student-orbit orbit-two"></div>'+
-            '<div class="student-orbit-core">ε</div>'+
-          '</div>'+
-        '</section>'+
-
-        '<section class="student-section">'+
-          '<div class="student-section-title">'+
-            '<div>'+
-              '<p class="student-kicker">MY SUBJECTS</p>'+
-              '<h2>Your learning</h2>'+
-            '</div>'+
-            '<span>'+subjects.length+' subject'+(subjects.length===1?'':'s')+'</span>'+
-          '</div>'+
-          '<div class="student-subject-grid">'+subjectCards+'</div>'+
-        '</section>'+
-
-        '<section class="student-grid" id="student-progress">'+
-          '<article class="student-panel">'+
-            '<p class="student-kicker">PROGRESS</p>'+
-            '<h2>Your progress will grow here</h2>'+
-            '<p>Complete practice levels to build a clear picture of what you know and what to work on next.</p>'+
-            '<div class="student-progress-track"><span style="width:8%"></span></div>'+
-            '<small>Your first completed activity will appear here.</small>'+
-          '</article>'+
-
-          '<article class="student-panel student-focus">'+
-            '<p class="student-kicker">THIS WEEK</p>'+
-            '<h2>Your focus</h2>'+
-            '<p>Choose one activity, take your time, and ask for help when you need it.</p>'+
-            '<div class="student-focus-tip">Tip: use “Show me how” if a question feels difficult.</div>'+
-          '</article>'+
-        '</section>'+
-
-        '<section class="student-more" id="student-more">'+
-          '<div>'+
-            '<p class="student-kicker">MORE</p>'+
-            '<h2>Support when you need it</h2>'+
-          '</div>'+
-          '<div class="student-more-grid">'+
-            '<article>'+
-              '<span>◌</span>'+
-              '<strong>Ask Epsilon</strong>'+
-              '<p>Get explanations, examples and helpful next steps.</p>'+
-              '<button class="ghost" type="button" onclick="alert(\'Ask Epsilon will be available after your teacher activates your study plan.\')">Learn more</button>'+
-            '</article>'+
-            '<article>'+
-              '<span>✓</span>'+
-              '<strong>School homework</strong>'+
-              '<p>Keep school tasks organised and ask for support when needed.</p>'+
-              '<button class="ghost" type="button" onclick="alert(\'Homework support will be available after your teacher activates your study plan.\')">Learn more</button>'+
-            '</article>'+
-          '</div>'+
-        '</section>'+
-      '</div>'+
-    '</section>';
+  if(!m)return '<h1>Welcome</h1><p>Your account is being set up. Please check back soon.</p>';
+  if(m.status==='revoked')return '<h1>Access paused</h1><p>Please contact Epsilon Academy.</p>';
+  var h='<h1>Hello, '+esc(m.name)+'</h1>';
+  if(!S.consented)h+='<div class="warnbox">Your learning is not switched on yet because we still need a parent or guardian to give permission. You can look around, but your answers will not be saved until then.</div>';
+  h+='<p class="muted">'+esc(m.year)+'</p><div class="card"><h2 style="margin-top:0">Your subjects</h2>'+((m.subs||[]).map(function(s){return '<span class="chip">'+esc(s.subject)+' ('+esc(s.board)+')</span>'}).join('')||'<span class="muted">No subjects yet.</span>')+'<div class="actions"><a href="/practice.html"><button>Open practice levels</button></a></div><p class="muted" style="margin-top:.6rem">Your baseline check and weekly plan open here as your teacher sets them.</p></div>';
+  return h;
 }
 function parentView(){
   var m=S.member,c=S.child;
